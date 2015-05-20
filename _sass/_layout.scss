@@ -11,7 +11,8 @@
 }
 
 .site-title {
-    font-size: 26px;
+    font-size: 48px;
+    font-weight: 400;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
@@ -189,7 +190,58 @@
     font-size: 24px;
 }
 
+ul.logo
+{
+  cursor: default;
+  margin: 0;
+}
 
+  ul.logo li
+  {
+    position: relative;
+    display: inline-block;
+    margin: 1.25em;
+    top: 0;
+  }
+
+    ul.logo li a {
+      display: block;
+      height: 96;
+      border-radius: 12px;
+      top: 0;
+      position: relative;
+      float: none;
+
+      -moz-transition: top .2s ease-in-out;
+      -webkit-transition: top .2s ease-in-out;
+      -o-transition: top .2s ease-in-out;
+      -ms-transition: top .2s ease-in-out;
+      transition: top .2s ease-in-out;
+    }
+
+
+      ul.logo li a:hover
+      {
+        top: -5px;
+      }
+
+
+  ul.actions li
+  {
+    display: inline-block;
+    margin: 0 0 0 1em;
+  }
+
+    ul.actions li:first-child
+    {
+      margin-left: 0;
+    }
+
+.miniicon  {
+
+	width: 24px;
+	height: 24px;
+}
 
 /**
  * Posts
