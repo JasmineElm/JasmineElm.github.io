@@ -189,6 +189,11 @@
     display: block;
     font-size: 24px;
 }
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
 
 ul.logo
 {
@@ -198,6 +203,7 @@ ul.logo
 
   ul.logo li
   {
+
     position: relative;
     display: inline-block;
     margin: 1.25em;
@@ -206,7 +212,6 @@ ul.logo
 
     ul.logo li a {
       display: block;
-      height: 96;
       border-radius: 12px;
       top: 0;
       position: relative;
