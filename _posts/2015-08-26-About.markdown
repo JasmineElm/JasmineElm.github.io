@@ -7,6 +7,6 @@ categories: About
 
     This is my personal site and blog.
     My interests are generally focussed on music and coding simple bash scripts, though I am learning "real" programming (slowly).
-    The links in the footer should give you an opportunity to stalk me on the internet should you so wish.</p>
+    The links in the footer should give you an opportunity to stalk me on the internet should you so wish.
 
 -- James
