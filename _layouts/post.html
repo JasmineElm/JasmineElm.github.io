@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <div class="post">
 
   <header class="post-header">
@@ -11,5 +12,12 @@ layout: default
   <article class="post-content">
     {{ content }}
   </article>
-
 </div>
+
+<button onclick="goBack()">Return</button>
+
+<script>
+function goBack() {
+   window.history.back();
+}
+</script>
