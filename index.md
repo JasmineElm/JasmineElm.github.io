@@ -6,21 +6,7 @@ permalink: /
 
 <html>
 <style>
-  img {
 
-  }
-
-<!--
-  section,
-  article {
-    margin-bottom: 3em;
-  }
-  section >: last-child, article >: last-child {
-    margin-bottom: 0;
-  }
-  section: last-child, article: last-child {
-    margin-bottom: 0;
-  } -->
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -56,12 +42,12 @@ permalink: /
   .andromeda {
     text-align: center;
     text-transform: uppercase;
-    font-family: serif;
+    font-family: sans-serif;
     font-size: 24pt;
     font-weight: 200;
     letter-spacing: 0.075em;
     line-height: 1.05em;
-    color: linen;
+    color: #eee8d5;
     position: absolute;
     margin: 0;
     top: 50%;
@@ -81,9 +67,9 @@ permalink: /
     height: 200px;
   }
   .blurry {
-    -moz-filter: grayscale(0.8) brightness(0.6) contrast(150%) blur(30px);
-    -webkit-filter: grayscale(0.8) brightness(0.6) contrast(150%) blur(30px);
-    filter: grayscale(0.8) brightness(0.6) contrast(150%) blur(30px);
+    -moz-filter: grayscale(0.2) brightness(1.3) contrast(30%) blur(30px);
+    -webkit-filter: grayscale(0.2) brightness(1.3) contrast(30%) blur(30px);
+    filter: grayscale(0.2) brightness(1.3) contrast(30%) blur(30px);
   }
   .bubble {
     -moz-animation-name: fadeIn;
@@ -101,26 +87,26 @@ permalink: /
   }
   @-moz-keyframes fadeIn {
     from {
-      -moz-filter: grayscale(0) brightness(1.3) contrast(20%) blur(1px);
+      -moz-filter: grayscale(.8) brightness(0.3) contrast(150%) blur(1px);
     }
     to {
-      -moz-filter: grayscale(0.8) brightness(0.3) contrast(150%) blur(30px);
+      -moz-filter: grayscale(0.2) brightness(1.3) contrast(30%) blur(30px);
     }
   }
   @-webkit-keyframes fadeIn {
     from {
-      -webkit-filter: grayscale(0) brightness(1.3) contrast(30%) blur(2px);
+      -webkit-filter: grayscale(.8) brightness(0.3) contrast(150%) blur(1px);
     }
     to {
-      -webkit-filter: grayscale(0.8) brightness(0.6) contrast(150%) blur(30px);
+      -webkit-filter: grayscale(0.2) brightness(1.3) contrast(30%) blur(30px);
     }
   }
   @keyframes fadeIn {
     0% {
-      filter: grayscale(0) brightness(1.3) contrast(30%) blur(2px);
+      filter: grayscale(.8) brightness(0.3) contrast(150%) blur(1px);
     }
     100% {
-      filter: grayscale(0.8) brightness(0.6) contrast(150%) blur(30px);
+      filter: grayscale(0.2) brightness(1.3) contrast(30%) blur(30px);
     }
   }
 </style>

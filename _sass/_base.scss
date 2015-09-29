@@ -17,9 +17,9 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 300;
+    font-weight: 200;
     color: $text-color;
-    background-color: $background-color;
+    background-color: lighten($background-color,5);
     -webkit-text-size-adjust: 100%;
 }
 
@@ -28,7 +28,7 @@ body {
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
+h1, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
@@ -79,10 +79,12 @@ li {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
-
+h1 {
+    font-weight: 100;
+  }
 
 
 /**
@@ -93,11 +95,12 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: lighten($brand-color, 35%);
+
     }
 
     &:hover {
-        color: $text-color;
+        color: $pop-color;
         text-decoration: underline;
     }
 }
@@ -108,8 +111,8 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    color: $base02;
+    border-left: 4px solid $base00;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
@@ -128,9 +131,9 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
+    border: 1px solid $base03;
     border-radius: 3px;
-    background-color: #eef;
+    color: $base0;
 }
 
 code {
@@ -184,8 +187,6 @@ pre {
     }
 }
 
-
-
 /**
  * Icons
  */
@@ -198,7 +199,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: $base2;
         }
     }
 }

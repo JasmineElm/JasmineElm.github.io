@@ -3,6 +3,7 @@ layout: post
 title:  "First post"
 date:   2015-05-26 22:18:45
 categories: writing
+synopsis: "First Post"
 ---
 
 
