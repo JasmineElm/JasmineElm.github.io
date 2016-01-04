@@ -29,28 +29,27 @@ Pretty simple huh?  Using a couple of built in shell commands, you can build a s
 The following script does just that. You'll need to alter a couple of lines to match your requirements. If nothing else, you should enter your specific directory path into the first line.  
 
 {% highlight bash %}
-cd *YOUR DIRECTORY HERE*
 echo "type the title of your post, followed by [ENTER]:"
 read title
 date=`date +%Y-%m-%d`
-time=`date +"%T"
+time=`date +"%T"`
 echo "---
 layout: post
 title:  ""$title ""
 date:   " $date $time "
 categories: writing
 synopsis: "A sentence of text"
----"
->> $date-$title.markdown
+---">> $date-$title.markdown
 sleep 2
-open $date-$title.markdown
+atom $date-$title.markdown
 {% endhighlight %}
 
 This isn't perfect, but may provide a starting point if you're looking to do something similar.
 
 
+
 Tomorrow, I'll look at making a script to start Jekyll so you can view the post in real time as you are editing it.
 
-
+[edited to make suitable for Linux]
 --
 James
