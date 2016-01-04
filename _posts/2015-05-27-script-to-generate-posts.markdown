@@ -50,6 +50,7 @@ This isn't perfect, but may provide a starting point if you're looking to do som
 
 Tomorrow, I'll look at making a script to start Jekyll so you can view the post in real time as you are editing it.
 
-[edited to make suitable for Linux]
 --
 James
+
+ (this post has been slightly altered to account for Linux syntax)
