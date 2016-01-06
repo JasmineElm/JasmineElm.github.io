@@ -21,7 +21,7 @@ draw_shades no
 background
 text_buffer_size 556
 own_window_type normal
-own_window_transparent nnoneo
+own_window_transparent no
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 own_window_argb_visual yes
 own_window_argb_value 0
