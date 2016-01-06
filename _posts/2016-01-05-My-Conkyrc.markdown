@@ -11,7 +11,6 @@ I recently installed <a href="http://bbs.archbang.org/">ArchBang</a> on my Think
 {% highlight bash %}
 alignment tr
 double_buffer yes
-
 gap_x 7
 gap_y 7
 uppercase no

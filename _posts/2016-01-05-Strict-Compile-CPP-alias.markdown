@@ -26,3 +26,5 @@ To use the above as an alias, save as a shell script, chmod it, and add an alias
 {% highlight ash %}
 alias compile='zsh ~/Documents/scripts/strictcompile.sh'
 {% endhighlight %}
+
+-- James
