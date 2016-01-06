@@ -21,7 +21,7 @@ g++ -ansi -pedantic-errors -Wall $filename -o $output
 ./$output
 {% endhighlight %}
 
-To use the above as an alias, save as a shell script, and add an alias to it in your .zshrc.  My alias looks like:
+To use the above as an alias, save as a shell script, chmod it, and add an alias referencing it in your .zshrc.  My alias looks like:
 
 {% highlight ash %}
 alias compile='zsh ~/Documents/scripts/strictcompile.sh'
