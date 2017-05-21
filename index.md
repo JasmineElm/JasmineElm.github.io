@@ -150,12 +150,11 @@ permalink: /
               <p class="andromeda">sound</p></a>
             </section>
           </div>
-
-    </article>
+    <!-- </article> -->
     </div>
 
     </div>
 
-</body>
+<!-- </body> -->
 
 </html>
