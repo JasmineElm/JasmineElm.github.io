@@ -2,7 +2,7 @@
  * Syntax highlighting styles
  */
 /**
-colours below maintained in the
+colours below maintained in the base file
 $base03:    #002b36;
 $base02:    #073642;
 $base01:    #586e75;
@@ -83,7 +83,7 @@ $green:     #859900;
     .sr { color: $cyan } /* Literal.String.Regex */
     .s1 { color: $cyan } /* Literal.String.Single */
     .ss { color: $cyan } /* Literal.String.Symbol */
-    .bp { color: $cyan } /* Name.Builtin.Pseudo */
+    .bp { color: $base0 } /* Name.Builtin.Pseudo */
     .vc { color: $base0 } /* Name.Variable.Class */
     .vg { color: $base0 } /* Name.Variable.Global */
     .vi { color: $base0 } /* Name.Variable.Instance */

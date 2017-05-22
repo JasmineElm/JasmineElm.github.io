@@ -79,13 +79,10 @@ li {
 /**
  * Headings
  */
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
+    color: inherit;
 }
-h1 {
-    font-weight: 100;
-  }
-
 
 /**
  * Links
@@ -94,15 +91,15 @@ a {
     color: $brand-color;
     text-decoration: none;
 
-    &:visited {
-        color: lighten($brand-color, 35%);
-
-    }
-
-    &:hover {
-        color: $pop-color;
-        text-decoration: underline;
-    }
+    // &:visited {
+    //     color: lighten($brand-color, 35%);
+    //
+    // }
+    //
+    // &:hover {
+    //     color: $base00;
+    //     text-decoration: underline;
+    // }
 }
 
 
@@ -173,6 +170,21 @@ pre {
     }
 }
 
+.wrapper2 {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(800px - (#{$spacing-unit}));
+        max-width:         calc(800px - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
+
 
 
 /**
@@ -184,22 +196,5 @@ pre {
         content: "";
         display: table;
         clear: both;
-    }
-}
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $base2;
-        }
     }
 }

@@ -37,8 +37,6 @@ $pop-color:        $red;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
-
 // Using media queries with like this:
 // @include media-query($palm) {
 //     .wrapper {
@@ -53,8 +51,15 @@ $on-laptop:        800px;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
+// alphabetical please
 @import
+
+        "anim",
         "base",
+        "footer",
         "layout",
+        "postSpecific",
+        "sandbox",
         "syntax-highlighting"
+
 ;
