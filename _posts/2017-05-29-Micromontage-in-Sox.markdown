@@ -28,8 +28,8 @@ A sample of the output can be found [here](https://archive.org/details/MicroMont
 
 # MICRO-MONTAGE #################
 #	JL	17-05-17        #
-#  used in HNM 400 submission   #
-#  see below info for usage     #
+#  Creates a montage of a given #
+#    file see below for usage   #
 #################################
 
  info='MICRO-MONTAGE\n-------------
