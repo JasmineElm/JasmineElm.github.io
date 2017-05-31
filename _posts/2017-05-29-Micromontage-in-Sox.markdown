@@ -19,6 +19,10 @@ The aesthetics of the resulting file can be somewhat uninspiring; the output fil
 + the montage has a single layer; slices sit next to one-another rather than on top of one-another
 + The micromontage is made up of parts of a single file, rather than parts of multiple files
 
+Nevertheless, the script is an interesting experiment in what can be done on the commandline using simple tools.
+
+A sample of the output can be found [here](https://archive.org/details/MicroMontage)
+
 ```
 #!/bin/zsh
 
@@ -104,3 +108,4 @@ else
 fi
 rm $temp
 ```
+-James
