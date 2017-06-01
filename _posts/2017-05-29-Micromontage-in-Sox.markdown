@@ -3,7 +3,7 @@ layout: post
 title:  Micromontage in Sox
 date:    2017-05-29 12:07:22
 categories: sound
-synopsis: Creating a micromontage using Sox 
+synopsis: Creating a micromontage using Sox
 ---
 I've been re-reading Curtis Rodes' excellent [Microsound](https://mitpress.mit.edu/books/microsound) again recently. It's packed with all sorts of useful information, and is one of those books that I find myself coming back to time and time again.
 
@@ -16,7 +16,7 @@ The aesthetics of the resulting file can be somewhat uninspiring; the output fil
 + The chosen duration range means that slices are (generally) perceptible as distinct sounds
 + The method of stitching doesn't alter slices before stitching them together
 + The method of stitching doesn't include the ability to stitch silence into the output file
-+ the montage has a single layer; slices sit next to one-another rather than on top of one-another
++ The montage has a single layer; slices sit next to one-another rather than on top of one-another
 + The micromontage is made up of parts of a single file, rather than parts of multiple files
 
 Nevertheless, the script is an interesting experiment in what can be done on the commandline using simple tools.
