@@ -8,6 +8,15 @@
      float: right;
  }
 
+ .hidden {
+   display: none;
+ }
+
+ .blockError {
+   color: red;
+   padding-left: 1%;
+ }
+
  .post-category {
      font-size: $small-font-size;
      text-transform: capitalize;
