@@ -8,7 +8,7 @@ synopsis: generating a palette from a movie.
 
 _Salo is a horribly beautiful film._
 
-![](/uploads/50SOS/img/Salo_Poster.png)
+![](/images/Salo_Poster.png)
 
 
 
@@ -21,4 +21,4 @@ This is what this post attempts to do. A digital copy of [Salo, or The 120 Days 
 
  Below you can find links to the palettes, and a couple of graphics generated using the colours.
 
-[<img src="/uploads/50SOS/img/salo_blog.png" width="100">](/uploads/50SOS/50SOS.tar.gz)
+[<img src="/images/salo_blog.png" width="100">](/uploads/50SOS.tar.gz)
