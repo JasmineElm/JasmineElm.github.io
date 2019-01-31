@@ -21,4 +21,4 @@ This is what this post attempts to do. A digital copy of [Salo, or The 120 Days 
 
  Below you can find links to the palettes, and a couple of graphics generated using the colours.
 
-[<img src="/uploads/50SOS/img/salo_blog.png" width="100">](/uploads/50SOS)
+[<img src="/uploads/50SOS/img/salo_blog.png" width="100">](/uploads/50SOS/)
