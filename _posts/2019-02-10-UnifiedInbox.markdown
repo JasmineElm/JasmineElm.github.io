@@ -23,13 +23,14 @@ End Sub
 ```
 
 Similarly, setting the macro up is a simple case of enabling the [developer tab](https://www.easytweaks.com/add-macros-outlook-2016/) and following the breadcrumbs until you get to the Macro editor:
-![image of Macro editor](../images/unifiedInbox_2.PNG)
+
+![image of Macro editor](/images/unifiedInbox_2.PNG)
 
 Once you've got the macro set up, and running, you can add a new button to the new [Quick Access Toolbar]() The easiest way I found to do this was to right click on the ribbon, and select ````Customise the Ribbon...````.  In the resulting screen, you can click the link to edit the QAT, and select the macro you want to use, and modify the icon used.
 
-![dialogue box](../images/unifiedInbox_3.PNG)
+![dialogue box](/images/unifiedInbox_3.PNG)
 
 The good thing about this approach is that you can run the macro using a simple button that is permenantly visible.
 
-![QAT](../images/unifiedInbox_4.PNG)
+![QAT](/images/unifiedInbox_4.PNG)
 
