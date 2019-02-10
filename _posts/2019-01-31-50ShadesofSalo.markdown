@@ -11,8 +11,6 @@ _Salo is a horribly beautiful film._
 ![](/images/Salo_Poster.png)
 
 
-
-
 It depicts some of the most violently unpleasant things you can imagine in a sumptuous way.  The cimenatography is gorgeous, the colours opulently saturated, the sets luxurious.  The experience of watching the film however leaves you feeling sullied, grimey, complicit.  Without realising it, you become sucked into the amoral, brutal world of the ruling elite, as they rape, torture and kill their way through their slaves.  What if the essence of the beauty in the film were extracted, distilled, and divorced from the context of the story?.  
 
 This is what this post attempts to do. A digital copy of [Salo, or The 120 Days of Sodom](http://www.bfi.org.uk/distribution/salo_or_the_120_days_of_sodom%C2%A0) was opened in VLC and fifty, equally distributed snapshots were taken using a [simple script]().  These snapshots were then processed to find the average colour, which was then sampled to generate a hex colour.
