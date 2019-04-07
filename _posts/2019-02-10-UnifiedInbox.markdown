@@ -26,7 +26,7 @@ Similarly, setting the macro up is a simple case of enabling the [developer tab]
 
 ![image of Macro editor](/images/unifiedInbox_2.PNG)
 
-Once you've got the macro set up, and running, you can add a new button to the new [Quick Access Toolbar]() The easiest way I found to do this was to right click on the ribbon, and select ````Customise the Ribbon...````.  In the resulting screen, you can click the link to edit the QAT, and select the macro you want to use, and modify the icon used.
+Once you've got the macro set up, and running, you can add a new button to the new [Quick Access Toolbar]() The easiest way I found to do this was to right click on the ribbon, and select ```Customise the Ribbon...```.  In the resulting screen, you can click the link to edit the QAT, and select the macro you want to use, and modify the icon used.
 
 ![dialogue box](/images/unifiedInbox_3.PNG)
 
