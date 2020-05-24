@@ -29,8 +29,8 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       $base02;
-$background-color: $base3;
+$text-color:       $base03;
+$background-color: $base2;
 $brand-color:      $base01;
 $pop-color:        $red;
 
@@ -54,12 +54,12 @@ $on-laptop:        800px;
 // alphabetical please
 @import
 
-        "anim",
+        // "anim",
         "base",
         "footer",
         "layout",
         "postSpecific",
-        "sandbox",
+        // "sandbox",
         "syntax-highlighting"
 
 ;

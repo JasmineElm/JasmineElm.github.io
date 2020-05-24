@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Posts
-permalink: /oldPosts/
+permalink: /posts/
 ---
 
 <div class="home">

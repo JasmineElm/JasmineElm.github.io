@@ -1,7 +1,7 @@
 ---
 layout: sandpit
 title: Posts
-permalink: /posts/
+permalink: /sandpit/
 ---
 
 <!-- <div class="home"> -->
