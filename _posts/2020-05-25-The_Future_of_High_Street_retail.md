@@ -6,8 +6,6 @@ categories: writing
 synopsis: "High Street Retail has been in steady decline for decades.  To stem this tide, retailers should embrace omnichannel retail, which will allow them to compete in a market increasingly dominated by online giants and supermarkets"
 ---
 
-# The Future of High Street Retail 
-
 Last year, before there was a hint of Coronavirus, I wrote an essay about how the high street can compete with Amazon, Tesco and other retail giants.
 
 It's too early to say how deeply the impact of Coronavirus will be felt by the high street, but it's clear that the high street will significantly change in the forthcoming months. As businesses look to reopen in the next month or so, forefront in their mind should be their ability to stay open in the face of ['The sharpest recession on record'](https://www.bbc.co.uk/news/business-52566030), and the unprecedented profits [reaped by major players](https://www.theguardian.com/technology/2020/apr/15/amazon-lockdown-bonanza-jeff-bezos-fortune-109bn-coronavirus) during the lockdown period.  This is doubly important as the lockdown has [normalised](online shopping).

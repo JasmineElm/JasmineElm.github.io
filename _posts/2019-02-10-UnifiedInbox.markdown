@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  unified Inbox in Outlook
+title:  Unified Inbox in Outlook
 date:    2019-02-10 10:24:37 
 categories: code
 synopsis: using a macro to create a unified inbox in Outlook
