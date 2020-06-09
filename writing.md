@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Writing
-permalink: /Writing/
+permalink: /writing/
 ---
 
 <div class="home">

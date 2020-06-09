@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Code
-permalink: /Code/
+permalink: /code/
 ---
 
 <div class="home">
