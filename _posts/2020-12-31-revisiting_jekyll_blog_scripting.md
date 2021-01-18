@@ -6,7 +6,7 @@ categories: writing
 synopsis: A lot has changed since I last thought about scripting blog posts...
 ---
 
-It's nearly five years since I first started blogging using Jekyll.Although I haven't exactly been prolific in that time, I have found that my [earlier](../../../../code/2015/05/28/script-to-generate-posts.html) [attempts](../../../../writing/2015/05/28/Script-to-start-Jekyll-Service.html)  at scripting are too brittle to be portable.  every time I try to use them somewhere new, I end up manually bodging a fix that rarely finds it's way back to the original script.  
+It's nearly five years since I first started blogging using Jekyll.  Although I haven't exactly been prolific in that time, I have found that my [earlier](../../../../code/2015/05/28/script-to-generate-posts.html) [attempts](../../../../writing/2015/05/28/Script-to-start-Jekyll-Service.html)  at scripting are too brittle to be portable.  every time I try to use them somewhere new, I end up manually bodging a fix that rarely finds it's way back to the original script.  
 
 Rather than polish the current rat's nest of scripting and aliases, I wanted a single solution that can be dropped into any shell, so I can use it anywhere, whether it is Termux on my phone, WSL, an old Macintosh, or Linux.
 
