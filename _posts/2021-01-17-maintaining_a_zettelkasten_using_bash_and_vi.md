@@ -15,31 +15,50 @@ In simple terms, knowledge is added to cards.  Each card is contains a contained
 
 ## What does an electronic zettelhkasten look like?
 
-If we're looking at making a wiki; that is absolutely possible, perhaps even in Vi alone.  Using markdown files, it is possible to king files together simply with minimal effort.  Managing and searching files however might need more heavy lifting.  
+If we're looking at making a wiki; that is absolutely possible, perhaps even in Vi alone.  Using markdown files, it is possible to king files together simply with minimal effort.  Managing and searching files however might need more heavy lifting.    The [blog here](https://www.edwinwenink.xyz/posts/48-vim_fast_creating_and_linking_notes/) was an excellent resource; the author covers all the functionality I wanted, specifically, naming of cards, and finding them.  
 
-+ How do we ensure files are individually named?
-+ how do we capture 'freshness' of the card?
-+ how do we link cards directly
-+ how do we search through the ideas to identify new links?
+In large part, I've simply copied the code wholesale.  The fuzzy-find/insert function is perfect for my needs:
 
-so we have the following requirements
+```vimscript
+"
+" see https://www.edwinwenink.xyz/posts/48-vim_fast_creating_and_linking_notes/
+"
 
-+ alias to make a new card
-+ grepping for existing cards
-+ different zettelkasten directories..?
-+ availability
+" CtrlP function for inserting a markdown link with Ctrl-X
+function! CtrlPOpenFunc(action, line)
+   if a:action =~ '^h$'
+      " Get the filename
+      let filename = fnameescape(fnamemodify(a:line, ':t'))
+    let filename_wo_timestamp = fnameescape(fnamemodify(a:line, ':t:s/\d+-//'))
 
+      " Close CtrlP
+      call ctrlp#exit()
+      call ctrlp#mrufiles#add(filename)
 
-## The Solution
+      " Insert the markdown link to the file in the current buffer
+    let mdlink = "[ ".filename_wo_timestamp." ]( ".filename." )"
+      put=mdlink
+  else
+      " Use CtrlP's default file opening function
+      call call('ctrlp#acceptfile', [a:action, a:line])
+   endif
+endfunction
 
-+ Bash to generate the initial file
-+ \nz to create files within vi
-+ search function within vi
+let g:ctrlp_open_func = {
+         \ 'files': 'CtrlPOpenFunc',
+         \ 'mru files': 'CtrlPOpenFunc'
+         \ }
+```
+Although I tried the file naming function, I found that my combination of multiple zettelhkasten (One for work, one for study and a general one) meant a function with hardcoded path wasn't workable. I decided that a shell function would be easier to maintain across devices.  a simple function to decide what `ZETTEL_DIR` is based on context (is `pwd` in a study/work path) means the card is created in the correct directory.
 
-+ code snippets
-- links to dotfiles
+```bash
+# New Zettle card
+nz() {
+  DATE_STR=$(date +"%Y%m%d%H%M")
+  TITLE=$*
+  CLEAN_TITLE=$(echo $* | sed 's/ /_/g'| tr '[:upper:]' '[:lower:]')
+  ZETTLE=$ZETTLE_DIR$DATE_STR'-'$CLEAN_TITLE.md
+  echo '# '$TITLE > $ZETTLE
+  vi $ZETTLE
+}
 
-## The future
-
-+ works well, but linking is slightly clunky
-+ grepping is a little cumbersome
