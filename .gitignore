@@ -1,4 +1,5 @@
 _site
-.sass-cache
-
+.*cache
+.bundle
+vendor
 _posts/2015-05-27-.markdown
