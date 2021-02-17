@@ -6,12 +6,11 @@ categories: code
 synopsis: vim configuration can be a difficult thing to get right. I explain my design choices and share config.
 ---
 
-## My vim Configuration.
+## My vim Configuration
 
 The more I use vim, the more handy tricks I pick up.  I'm currently using vim to write a 10,000 word assignment; something I would have struggled to consider months ago, but with a reasonably minimal configuration combined with some handy configuration tweaks, my experience of writing for longer periods in a terminal prompt isn't too shabby.
 
 My path to learning vim has been a relatively slow one.  There were a few _aha_ moments, but for the most part, progress was a result of concerted effort to build both knowledge and muscle memory. If you on a similar journey to learn vim, these are the things that I found most useful
-
 
 + _learn_ the basics of movement.
 + learn how buffers work (buffers seriously improve your copy/paste game)
@@ -34,19 +33,16 @@ The majority of my vim use is in writing markdown. Using `spell` is key for pick
 
 By default, vim shows a minimally decorated `ruler` that contains the bare minimum of information.  You can add a more informative `statusline` that shows, I believe more _useful_ information, but this is at the expense of screen real estate.  On my laptop, the combined status and ruler take up the better part of 10% of the entire space.  Instead, I take a minimal subset of information, and place that in my statusbar:
 
-![an image of my ruler](../../../../images/ruler.png)
+![an image of my ruler]({{site.url}}/images/ruler.png)
 
-The ruler contains word count(`650` in this example), whether the files is modified (`[+]`), and the `linenumber`:`column`.  This is perfect for my needs, anything more would be a waste.
+The ruler contains word count(`650` in this example), whether the files is modified (`[+]`), and the `line number`:`column`.  This is perfect for my needs, anything more would be a waste.
 
-## Toggle Explorer 
+## Toggle Explorer
 
-Usually, I work on a single file, and don't need to think about jumping between directories; I'm writing essays, not complex codebases.  When I am writing longer, more complex documents, I do prefer to split sections out into separate files.  For instance, I'm working on a 10,000 word essay that is split thematically into six files. This approach lets me focus on one thing at once.  Whilst vim handles this magnificently, a couple of lines of configuration means I can use `:find` or `:edit` to open different files with minimal (tab completing) fuss, having a dedicated file browser that I can toggle is a brilliant tweak for me; I can remind myself of the document structure, and open new files with a few keystrokes (`<C-E>` to open the browser, `j`, `k` for selecting the right one, and `enter` to open it)
+Usually, I work on a single file, and don't need to think about jumping between directories; I'm writing essays, not complex code-bases.  When I am writing longer, more complex documents, I do prefer to split sections out into separate files.  For instance, I'm working on a 10,000 word essay that is split thematically into six files. This approach lets me focus on one thing at once.  Whilst vim handles this magnificently, a couple of lines of configuration means I can use `:find` or `:edit` to open different files with minimal (tab completing) fuss, having a dedicated file browser that I can toggle is a brilliant tweak for me; I can remind myself of the document structure, and open new files with a few keystrokes (`<C-E>` to open the browser, `j`, `k` for selecting the right one, and `enter` to open it)
 
 ## What's Missing
 
 I alluded to my configuration being a living thing; as my usage evolves, it should be matched by the configuration.  There are a few things I want to investigate further, particularly around getting a better workflow between `pandoc` and vim. Things such as pandoc are top of the list; [Vim-Pandoc](https://github.com/vim-pandoc/vim-pandoc) is something I want to integrate, together with some sort of workflow around rendering documents automatically.
 
 My full configuration can be found [here](https://github.com/JasmineElm/vim)
-
-
-

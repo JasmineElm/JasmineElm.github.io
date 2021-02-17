@@ -43,16 +43,18 @@ function bpmFromSlider() {
     //    ensure length of bpm is not greater than 7 (123.456)
     var elementID = "\"" + noteNames[i][0] + "\"";
     var dottedelementID = "\"" + noteNames[i][1] + "\"";
-    document.getElementById(noteNames[i][0]).innerHTML = ((60/bpm) * noteNames[i][2] * 4000).toFixed(3);
-    document.getElementById(noteNames[i][1]).innerHTML = ((60/bpm) * noteNames[i][2] * 6000).toFixed(3); //dotted noted = 1.5 length of undotted
+    document.getElementById(noteNames[i][0]).innerHTML = ((60/bpm) *noteNames[i][2]* 4000).toFixed(3);
+    document.getElementById(noteNames[i][1]).innerHTML = ((60/bpm) *noteNames[i][2]* 6000).toFixed(3); //dotted noted = 1.5 length of undotted
   }
 }
 
 </script>
-## BPM to milisecond calculator
-The below table displays the note lengths for a given BPM (beats per minute). The system will not return note lengths for non-numeric values, or negative numbers
-<input id="bpmSlider" placeholder="BPM" value="120" onchange="bpmFromSlider();" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();">
 
+## BPM to milisecond calculator
+
+The below table displays the note lengths for a given BPM (beats per minute). The system will not return note lengths for non-numeric values, or negative numbers
+
+<input id="bpmSlider" placeholder="BPM" value="120" onchange="bpmFromSlider();" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();">
 
 <table id="noteTable">
   <tbody>

@@ -10,6 +10,4 @@ With the pandemic, there have been loads of courses that have been made [tempora
 
 As a linux user, there was a temptation to simply use my own machine.  This however runs contrary to the spirit of the challenge.  Instead, creating and maintaining a virtual private server gives a far more authentic experience of Linux System Administration.  Although it's the first day, I have found the experience of setting up an `ec2` instance on AWS invaluable.
 
-I'm keeping a repo of my notes [here](https://github.com/JasmineElm/Linux_Upskill_Challenge) The repo also includes a simple script to manage ec2 instances straight from the commandline rather than use the the web interface.
-
-
+I'm keeping a repo of my notes [here](https://github.com/JasmineElm/Linux_Upskill_Challenge) The repo also includes a simple script to manage ec2 instances straight from the command-line rather than use the the web interface.

@@ -1,5 +1,5 @@
 _site
 .*cache
 .bundle
+.vscode
 vendor
-_posts/2015-05-27-.markdown

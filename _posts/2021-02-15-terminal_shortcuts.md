@@ -8,7 +8,7 @@ synopsis: CTRL and wut? </br> There's plenty of shortcuts that can make using th
 
 I'm slowly making my way through the [Linux Upskill Challenge](https://linuxupskillchallenge.com/), and coming across some basic stuff I've completely missed before.
 
-On a professional basis, I'm using keyboard shortcuts _all_ the time.  Whether it's snapping (`super`+`arrow key`), minimising open windows (`super` + `d`), or any of the myriad `ctrl` + `...` combos that are second nature to most users.  When it comes to the commandline however, I only knew one: `ctrl`+`c`. Whilst this has done me fine for the past ten years, there's far more to prompt shortcuts.  Although some of the below may have limited use-cases I have a new favourite way of clearing the prompt (`ctrl`+`l`).
+On a professional basis, I'm using keyboard shortcuts _all_ the time.  Whether it's snapping (`super`+`arrow key`), minimising open windows (`super` + `d`), or any of the myriad `ctrl` + `...` combos that are second nature to most users.  When it comes to the command-line however, I only knew one: `ctrl`+`c`. Whilst this has done me fine for the past ten years, there's far more to prompt shortcuts.  Although some of the below may have limited use-cases I have a new favourite way of clearing the prompt (`ctrl`+`l`).
 
 | Combo            | Effect                                                                               |
 | :--------------- | :----------------------------------------------------------------------------------- |

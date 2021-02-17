@@ -6,7 +6,7 @@ categories: code
 synopsis: "adapted script to grab scrobbles from Libre.fm"
 ---
 
-Despite using last.fm for almost a decade, I'd never used it for anything other than scrobbling, so when the upgrade disabled this functionality I began looking for alternatives.  The obvious choice was Libre.fm, which I'm happily using at the moment. Unlike Last.FM, getting at my scrobbles isn't quite as easy (where I was using IFFFT to copy scrobbles to a Google spreadsheet), but the guys behind Libre.fm released a Python export script for Last/Libre.fm which fits the bill admirably.  
+Despite using last.fm for almost a decade, I'd never used it for anything other than scrobbling, so when the upgrade disabled this functionality I began looking for alternatives.  The obvious choice was Libre.fm, which I'm happily using at the moment. Unlike Last.FM, getting at my scrobbles isn't quite as easy (where I was using [IFFFT](https://ifttt.com/) to copy scrobbles to a Google spreadsheet), but the guys behind Libre.fm released a Python export script for Last/Libre.fm which fits the bill admirably.  
 
 Below is a subtly adapted version that I'll use to analyse my listening habits.  The script will output a text file delimited by tabs with the following information:
 
@@ -15,10 +15,9 @@ Below is a subtly adapted version that I'll use to analyse my listening habits. 
 + track title
 + album title
 
-I don't think there is an easy way to shoe-horn genre into the script (it could possibly be done by comparing the album mbid on MusicBrainz)
+I don't think there is an easy way to shoe-horn genre into the script (it could possibly be done by comparing the album `mbid` on MusicBrainz)
 
-
-{% highlight python %}  
+```python
     #!/usr/bin/env python
     #-*- coding: utf-8 -*-
 
@@ -233,6 +232,4 @@ I don't think there is an easy way to shoe-horn genre into the script (it could 
         parser = OptionParser()
         username, outfile, startpage, server, infotype = get_options(parser)
         main(server, username, startpage, outfile, infotype)
-{% endhighlight %}
-
--- James
+```

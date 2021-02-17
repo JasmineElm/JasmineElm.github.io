@@ -6,7 +6,7 @@ categories: writing
 synopsis: change me
 ---
 
-I've mentioned [earlier]() that I was trying to use 'basic' tools like `Vi` and `Bash` preference to gui heavy tools.  Describing Vi and Bash as simple tools does them a disservice.  Bash is powerful enough to be used as a full programming lanuage,even before you factor in the range of external programs (`sed`, `perl`, `awk`, _ad infinitum_) that it can call on. Vi has an established `vimscript` language and a long enough lifespan to ensure anything you are trying to do has been attempted, and likely documented before.  Can these two tools be enough to manage a Zettelkasten though?
+I've mentioned [earlier]() that I was trying to use 'basic' tools like `Vi` and `Bash` preference to gui heavy tools.  Describing Vi and Bash as simple tools does them a disservice.  Bash is powerful enough to be used as a full programming language,even before you factor in the range of external programs (`sed`, `perl`, `awk`, _ad infinitum_) that it can call on. Vi has an established `vimscript` language and a long enough lifespan to ensure anything you are trying to do has been attempted, and likely documented before.  Can these two tools be enough to manage a Zettelkasten though?
 
 ## What's a Zettelkasten?
 
@@ -61,4 +61,4 @@ nz() {
   echo '# '$TITLE > $ZETTLE
   vi $ZETTLE
 }
-
+```

@@ -18,7 +18,7 @@ My initial thoughts were that I could render the final draft to a Word document,
 Rather than install the 1.8G of LaTeX, the base package (around 180M) seems to have everything required for my purposes
 
 ```bash
-    apt-get install texlive-latex-base pandoc
+   sudo apt install texlive-latex-base pandoc
 ``` 
 
 ### Create your Markdown and metadata
@@ -29,9 +29,11 @@ Rather than install the 1.8G of LaTeX, the base package (around 180M) seems to h
     author: [James Lemin]\ntitle: [\"Markdown, Pandoc, and LaTeX\"]\ndate: [2019]\n---" > metadata.yaml
     echo "@book{lemin2019,\ntitle={Markdown, Pandoc, and LaTeX},\nauthor={Lemin, J},\nurl={www.james-lemin.com},\njournal={James-Lemin.com},\nyear={2019}}" > bibliography.bib
 ```
+
 ### Compile your document
 
 ```bash
     pandoc example.md --metadata=metadata.yaml --toc --biblio=bibliography.bib --latex-engine=xelatex -o test.pdf 
 ```
+
 And that's it!

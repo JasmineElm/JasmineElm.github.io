@@ -12,19 +12,17 @@ I appear not to be a lone in this, there are a couple of cpp compile shell scrip
 
 At present, the script only accepts a single argument of the file (including the full filepath).  This appears to be fine for my progress through the book so far, though I may end up revisiting this later on as I get onto the more complex exercises.
 
-{% highlight bash %}
+```bash
 filepath="${1%/*}"
 filename="${1##*/}"
 output="${filename%.*}"
 cd $filepath
 g++ -ansi -pedantic-errors -Wall $filename -o $output
 ./$output
-{% endhighlight %}
+```
 
 To use the above as an alias, save as a shell script, chmod it, and add an alias referencing it in your .zshrc.  My alias looks like:
 
-{% highlight ash %}
+```bash
 alias compile='zsh ~/Documents/scripts/strictcompile.sh'
-{% endhighlight %}
-
--- James
+```

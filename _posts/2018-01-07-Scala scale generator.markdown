@@ -10,12 +10,10 @@ synopsis: javascript Scala scale generator
 /*
   Generate Scala
 */
-
-
     /*Random string, number and bool functions*/
     function randomString(length) {
       var returnString = "";
-      /*  below variable roughly has letter frequencies matching English language
+      /*below variable roughly has letter frequencies matching English language
           should mean that output text is less exotic looking
       */
       var possible = "aaaaaaaaaaaaaaaabbbcccccddddddddeeeeeeeeeeeeeeeeeeeeeeeeefffffgggghhhhhhhhhhhhiiiiiiiiiiiiiijkllllllllmmmmmnnnnnnnnnnnnoooooooooooooooopppqrrrrrrrrrrrrssssssssssstttttttttttttttttttttttuuuuuuvwwwwwxyyyyz";
@@ -30,7 +28,7 @@ synopsis: javascript Scala scale generator
     }
 
     function randomfloat(rangeLower, rangeUpper) {
-      /* a variation on the randomInt function */
+      /*a variation on the randomInt function*/
         var returnFloat = Math.random()*(rangeUpper-rangeLower)+rangeLower;
         return returnFloat;
     }
@@ -141,7 +139,7 @@ synopsis: javascript Scala scale generator
   Scala itself relies on plain text files with an extension of "scl". The rules around the formatting of contents of the file itself are relatively permissive, namely:
 
 + a file may only contain one scale.
-+  line comments are represented by lines beginning with "!", they are ignored by Scala/compatible software
++ line comments are represented by lines beginning with "!", they are ignored by Scala/compatible software
 + the first line that is not a comment should contain a description of the fieldset
 + The next non-comment line will contain the number of notes
 + Each subsequent line will contain note values
@@ -156,18 +154,16 @@ synopsis: javascript Scala scale generator
 + The first note of 1&frasl;1 or 0.0 cents is implicit and not in the files.
 + ratios and cent values are calculated from the root note
 
-
-  Additionally, to make the output scales usable, I have applied some additional rules:
+Additionally, to make the output scales usable, I have applied some additional rules:
 
 + the scale will cover a single octave
 + the scale will contain at least two notes
 + the notes in a scale will be ordered low to high
 
-  The below button will generate text in scala ".scl" format. To define a name and/or the number of notes in a scale use the textboxes. If the boxes are not used, or if they contain invalid values (e.g. if the number of notes box contains letters, or is unusually low/high),
-    random values will be used.
+The below button will generate text in scala ".scl" format. To define a name and/or the number of notes in a scale use the text-boxes. If the boxes are not used, or if they contain invalid values (e.g. if the number of notes box contains letters, or is unusually low/high), random values will be used.
 
 I've also used this code in a twitter bot that will irregularly tweet a scale:
-[@microscalebot](https://twitter.com/microscalebot).
+~~[@microscalebot](https://twitter.com/microscalebot).~~
 
 <input type="text" name="name" id="textbox1" placeholder="Scale Name" />
 <label for="name" id="nameError" class="blockError"> Name not supplied!</label><br><br>

@@ -9,7 +9,7 @@ synopsis: Making a journal in vim is surprisingly easy.  This post includes some
 
 For me, keeping  a simple journal, provides a easy way of reflecting on the day. Done right, keeping a diary has been linked to [creativity](https://www.brainpickings.org/2014/09/04/famous-writers-on-keeping-a-diary/), and [reflective learning](https://www.kent.ac.uk/learning/PDP-and-employability/pdp/reflective.html).  Moreover, recording [one good thing per day](https://www.actionforhappiness.org/take-action/find-three-good-things-each-day)  has both mental health, and [positive habit forming](https://charlesduhigg.com/the-power-of-habit/) benefits.
 
-Core to my ability to maintain the habit of keeping a journal is making it _as easy as possible_ to add / maintain entries.  My journal is a brief affair that balancesthe main benefits of capturing and reflecting on the day's events with the effort required to do so.
+Core to my ability to maintain the habit of keeping a journal is making it _as easy as possible_ to add / maintain entries.  My journal is a brief affair that balances the main benefits of capturing and reflecting on the day's events with the effort required to do so.
   
 ## Why Vim?
 
