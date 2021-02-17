@@ -1,6 +1,5 @@
 ---
 layout: post
-
 title:  Keeping a Journal in Vim
 date:    2020-05-29 
 categories: code
@@ -15,7 +14,7 @@ Core to my ability to maintain the habit of keeping a journal is making it _as e
 
  Given this focus on simplicity, why would I consider Vim?  Surely I'd be stuck in a single entry forever whilst I try to [exit](https://github.com/hakluke/how-to-exit-vim)?
 
-In fact Vim is perfect for the task of journaling; it is readily, _freely_ available on my phone via [termux](https://wiki.termux.com/wiki/Text_Editors#Vim), my laptop, or at a push via ssh. Whilst the same may be said about other editors, Vim's super power as far as journalling is that it can apply templates contextually.  Tying these templates together with Vim's ability to process shell commands, makes it is possible to create a personalised entry with effectively zero effort.  Using a editor in a terminal means I don't have the visual cruft of a bespoke app with the associated [cognitive load](https://www.nngroup.com/articles/zen-mode/) and [interaction cost](https://www.nngroup.com/videos/interaction-cost/).  Finally, _rolling my own_ journal process, allwos me to fully own my data.  I'm not tied to a proprietary platform, and don't have to worry about about how the data is used.
+In fact Vim is perfect for the task of journaling; it is readily, _freely_ available on my phone via [termux](https://wiki.termux.com/wiki/Text_Editors#Vim), my laptop, or at a push via ssh. Whilst the same may be said about other editors, Vim's super power as far as journaling is that it can apply templates contextually.  Tying these templates together with Vim's ability to process shell commands, makes it is possible to create a personalised entry with effectively zero effort.  Using a editor in a terminal means I don't have the visual cruft of a bespoke app with the associated [cognitive load](https://www.nngroup.com/articles/zen-mode/) and [interaction cost](https://www.nngroup.com/videos/interaction-cost/).  Finally, _rolling my own_ journal process, allwos me to fully own my data.  I'm not tied to a proprietary platform, and don't have to worry about about how the data is used.
 
 ## Ingredients
 

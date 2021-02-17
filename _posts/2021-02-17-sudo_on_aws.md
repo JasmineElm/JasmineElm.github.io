@@ -7,7 +7,7 @@ synopsis: Getting sudo to work on AWS isn't as obvious as it might be{{site.url}
 ---
 
 While following the [Linux Upskill challenge](https://github.com/snori74/linuxupskillchallenge/), I came across some unexpected behaviour:  issuing `sudo <command>` didn't prompt me for a password.
-No problem I thought; I simply need to set a password for my account.  While I'm thinking of it, let's update the password for root too, after all our .
+No problem I thought; I simply need to set a password for my account.  While I'm thinking of it, let's update the password for root too, after all our ec2 instance [isn't using a firewall](https://github.com/snori74/linuxupskillchallenge/blob/master/00-AWS-Free-Tier.md) yet.
 
 ```bash
 su - root
@@ -37,7 +37,7 @@ question on Stack Overflow suggests that the problem may be a file in `/etc/sudo
 grep -rl NOPASSWD /etc/sudoers.d
 ```
 
-_Ouptut_
+_Output_
 
 ```bash
 /etc/sudoers.d/90-cloud-init-users
@@ -48,7 +48,8 @@ Let's look at the file (note the lazy history expansion):
 ```bash
 more $(!!)
 ```
-_Ouptut_
+
+_Output_
 
 ```bash
 # User rules for ubuntu

@@ -10,10 +10,10 @@ I've mentioned [earlier]() that I was trying to use 'basic' tools like `Vi` and 
 
 ## What's a Zettelkasten?
 
-I'm getting ahead of myself.  _Zettelkasten_ is the German term for 'slip box'.  It's the colloquial term used for managing and stroing notes. The concept spans back five hundred years or so to  Conrad Gessner, but it's Niklas Luhmann who raised the profile of the idea.
-In simple terms, knowledge is added to cards.  Each card is contains a contained idea, but each card may reference others.  For instance a card about the stained glass used in Notre-Dame may reference a cards about medieval glass making, religious iconography in the 13th century, lead smelting, and so on.  Storing the information is important, but linking ideas and knowledge is where the system comes into its own.  Rather than writing an encyclopaedia of knowledge, you end up writing something much closer to a wiki.  Ideas are captured concisely, reviewed regularly, and linked widely.  [This](https://www.goodreads.com/book/show/34507927-how-to-take-smart-notes) book by Sönke Ahrens explains the process, and strategies in far greater (but wonderfully digestible) detail.
+I'm getting ahead of myself.  _Zettelkasten_ is the German term for 'slip box'.  It's the colloquial term used for managing and storing notes. The concept spans back five hundred years or so to  Conrad Gessner, and his [bibliography](https://www.rcpe.ac.uk/heritage/conrad-gesner), but it's [Niklas Luhmann](https://www.youtube.com/watch?v=U2hxygqjx2k) who raised the profile of the idea.
+In simple terms, knowledge is added to cards.  Each card is contains a contained idea, but each card may reference others.  For instance a card about the stained glass used in Notre-Dame may reference a cards about medieval glass making, religious iconography in the 13th century, lead smelting, and so on.  Storing the information is important, but linking ideas and knowledge is where the system comes into its own.  Rather than writing an encyclopedia of knowledge, you end up writing something much closer to a wiki.  Ideas are captured concisely, reviewed regularly, and linked widely.  [This](https://www.goodreads.com/book/show/34507927-how-to-take-smart-notes) book by Sönke Ahrens explains the process, and strategies in far greater (but wonderfully digestible) detail.
 
-## What does an electronic zettelhkasten look like?
+## What does an electronic zettelkasten look like?
 
 If we're looking at making a wiki; that is absolutely possible, perhaps even in Vi alone.  Using markdown files, it is possible to king files together simply with minimal effort.  Managing and searching files however might need more heavy lifting.    The [blog here](https://www.edwinwenink.xyz/posts/48-vim_fast_creating_and_linking_notes/) was an excellent resource; the author covers all the functionality I wanted, specifically, naming of cards, and finding them.  
 
@@ -49,7 +49,8 @@ let g:ctrlp_open_func = {
          \ 'mru files': 'CtrlPOpenFunc'
          \ }
 ```
-Although I tried the file naming function, I found that my combination of multiple zettelhkasten (One for work, one for study and a general one) meant a function with hardcoded path wasn't workable. I decided that a shell function would be easier to maintain across devices.  a simple function to decide what `ZETTEL_DIR` is based on context (is `pwd` in a study/work path) means the card is created in the correct directory.
+
+Although I tried the file naming function, I found that my combination of multiple zettelkasten (One for work, one for study and a general one) meant a function with hardcoded path wasn't workable. I decided that a shell function would be easier to maintain across devices.  a simple function to decide what `ZETTEL_DIR` is based on context (is `pwd` in a study/work path) means the card is created in the correct directory.
 
 ```bash
 # New Zettle card

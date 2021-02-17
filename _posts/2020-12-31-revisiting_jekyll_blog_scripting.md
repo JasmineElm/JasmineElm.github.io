@@ -50,6 +50,3 @@ nbp() {
 ```
 
 Splitting the script into three functions should make it easier to maintain/debug.  To write a new blog post I simply now need to `nbp A Blog Post Title`, and start writing straight away.
-
-
-
