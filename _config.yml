@@ -1,12 +1,33 @@
-# Site settings
 title: James Lemin
-description: > # this means to ignore newlines until "baseurl:"
+description: >- # this means to ignore newlines until "baseurl:"
   The personal site of James Lemin
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://james-lemin.com" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+remote_theme: pmarsceill/just-the-docs
+color_scheme: dark
+
+# Aux links for the upper right navigation
+# aux_links:
+#   "Twitter":
+#     - "https://twitter.com/jasmine_elm"
+
+# Makes Aux links open in a new tab. Default is false
+# aux_links_new_tab: true
+# Footer
+search_enabled: false
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
 
-# Build settings
-markdown: kramdown
+footer_content: >-
+  <style> .miniicon { width: 24px; height: 24px; </style>
+    <div class="logo" style="text-align: center;">
+       <a href="https://twitter.com/jasmine_elm" style=" margin: 1.25em"; ><img class="miniicon" src="/images/twitter.svg" alt "Twitter" /></a>  
+       <a href="https://github.com/JasmineElm" style=" margin: 1.25em"; ><img class="miniicon" src="/images/github.svg" alt "Github" /></a> 
+       <a href="https://www.behance.net/jasmineelm" style=" margin: 1.25em"; ><img class="miniicon" src="/images/behance.svg" alt "Behance" /></a> 
+      <a href="https://www.goodreads.com/user/show/92143072-james-lemin" style=" margin: 1.25em"; ><img class="miniicon" src="/images/goodreads.svg" alt "Goodreads" /></a>
+      <a href="https://www.last.fm/user/Bronson59" style=" margin: 1.25em"; ><img class="miniicon" src="/images/lastfm.svg" alt "last.fm" /></a>  
+      <a href="https://letterboxd.com/jasmineelm/" style=" margin: 1.25em"; ><img class="miniicon" src="/images/letterboxd.svg" alt "Letterboxd" /</a>
+       <a href="feed.xml" style=" margin: 1.25em"; ><img class="miniicon" src="/images/rss.svg" alt "rss feed" /></a> 
+    </div>  
+url: "https://james-lemin.com" # the base hostname & protocol for your site
 
-theme: jekyll-theme-dinky

@@ -3,6 +3,7 @@ layout: post
 title:  sudo on AWS
 date:    2021-02-17 12:46:58 
 categories: code
+theme: jekyll-theme-dinky
 synopsis: Getting sudo to work on AWS isn't as obvious as it might be{{site.url}}.
 ---
 
@@ -82,6 +83,7 @@ chmod 640 /etc/sudoers.d/90-cloud-init-users
 ```
 
 Now we can edit it, and return the permissions
+
 ![editing once the permissions are changed]({{site.url}}/images/aws_passwd_05.jpg)
 
 ```bash
