@@ -1,9 +1,13 @@
 ---
 layout: post
-title:  Strict Compile CPP alias
-date:    2016-01-05
+title: Strict Compile CPP alias
+date: 2016-01-05T00:00:00.000Z
 categories: code
-synopsis: "a short script to compile cpp using strict rules and open the resulting executable"
+synopsis: >-
+  a short script to compile cpp using strict rules and open the resulting
+  executable
+last-modified-date: '2021-06-12T16:39:36+01:00'
+
 ---
 
 I've been slowly working through Accelerated C++ over the past couple of weeks.  It's very good; there's loads of information densely packed into its 250-odd pages.  One thing that has frustrated me about working through the examples is having to retype the same things over-and over again to get the examples to successfully compile.

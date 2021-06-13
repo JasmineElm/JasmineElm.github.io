@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  Markdown, Pandoc, and LaTeX 
-date:    2019-04-07 07:57:10 
+title: Markdown, Pandoc, and LaTeX
+date: 2019-04-07T07:57:10.000Z
 categories: writing
 synopsis: Using Markdown and Pandoc to create LaTEX formatted documents
+last-modified-date: '2021-06-12T16:39:51+01:00'
+
 ---
 
 I've always wanted to learn how to typeset documents using [LaTeX](https://www.latex-project.org/), but found the syntax forbidding.  On the other hand, [Markdown](https://daringfireball.net/projects/markdown/) is really simple to use, but is lacking in features for print such as page breaks.
@@ -14,12 +16,13 @@ My initial thoughts were that I could render the final draft to a Word document,
 
 ## Setting up
 
-### Install texlive-latex-base and Pandoc. 
+### Install texlive-latex-base and Pandoc.
+
 Rather than install the 1.8G of LaTeX, the base package (around 180M) seems to have everything required for my purposes
 
 ```bash
    sudo apt install texlive-latex-base pandoc
-``` 
+```
 
 ### Create your Markdown and metadata
 

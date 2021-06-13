@@ -1,10 +1,13 @@
 ---
 layout: post
-title:  BPM 2 Ms Calculator
-date:    2018-01-08 20:22:17
+title: BPM 2 Ms Calculator
+date: 2018-01-08T20:22:17.000Z
 categories: code
 synopsis: a simple bpm to ms calculator
+last-modified-date: '2021-06-12T16:39:45+01:00'
+
 ---
+
 <script>
 /*
   BPM to MS

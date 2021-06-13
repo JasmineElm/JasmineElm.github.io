@@ -1,10 +1,13 @@
 ---
 layout: post
-title:  Micromontage in Sox
-date:    2017-05-29 12:07:22
+title: Micromontage in Sox
+date: 2017-05-29T12:07:22.000Z
 categories: sound
 synopsis: Creating a micromontage using Sox
+last-modified-date: '2021-06-12T16:39:34+01:00'
+
 ---
+
 I've been re-reading Curtis Rodes' excellent [Microsound](https://mitpress.mit.edu/books/microsound) again recently. It's packed with all sorts of useful information, and is one of those books that I find myself coming back to time and time again.
 
 In chapter 5, Roads discusses micromontage. Micromontage is a process of composing a sequence of sounds from one or more source files.  Whilst it may share some similarities with music concrete, it operates on a much finer scale.  In a micromontage, sounds are typically much shorter, often less than 100 milliseconds each. Despite working on a similar time-domain to granular synthesis, micromontage can afford a composer a much greater level of control over the choice and placement of sounds.  This control can come at a heavy cost. Manually slicing and mixing back hundreds or thousands of sounds is a process that requires both patience, and an ability to think at both the scale of the sound being placed, and the overall piece.
@@ -13,11 +16,11 @@ The below script attempts to create a dumb micro micromontage; it takes slices o
 
 The aesthetics of the resulting file can be somewhat uninspiring; the output file bears the hallmarks of the input file, due in main to the way in which the output file is constructed:
 
-+ The chosen duration range means that slices are (generally) perceptible as distinct sounds
-+ The method of stitching doesn't alter slices before stitching them together
-+ The method of stitching doesn't include the ability to stitch silence into the output file
-+ The montage has a single layer; slices sit next to one-another rather than on top of one-another
-+ The micromontage is made up of parts of a single file, rather than parts of multiple files
+- The chosen duration range means that slices are (generally) perceptible as distinct sounds
+- The method of stitching doesn't alter slices before stitching them together
+- The method of stitching doesn't include the ability to stitch silence into the output file
+- The montage has a single layer; slices sit next to one-another rather than on top of one-another
+- The micromontage is made up of parts of a single file, rather than parts of multiple files
 
 Nevertheless, the script is an interesting experiment in what can be done on the command-line using simple tools.
 

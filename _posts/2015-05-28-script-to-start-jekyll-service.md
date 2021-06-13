@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  Alias to start Jekyll Service
-date:    2015-05-28 21:26:53
+title: Alias to start Jekyll Service
+date: 2015-05-28T21:26:53.000Z
 categories: writing
-synopsis: "bash script to aid working in Jekyll"
+synopsis: bash script to aid working in Jekyll
+last-modified-date: '2021-06-12T16:39:06+01:00'
+
 ---
 
 Here is a simple alias that starts the Jekyll service, and opens a browser.

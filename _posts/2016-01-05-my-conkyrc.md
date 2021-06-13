@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  My conkyrc
-date:    2016-01-06
+title: My conkyrc
+date: 2016-01-06T00:00:00.000Z
 categories: code
-synopsis: "My current conky profile"
+synopsis: My current conky profile
+last-modified-date: '2021-06-12T16:39:39+01:00'
+
 ---
 
 I recently installed <a href="http://bbs.archbang.org/">ArchBang</a> on my Thinkpad.  It's great; fast and light on a relatively old laptop.  I loved <a href="http://projects.tynsoe.org/en/geektool/">Geektool</a>  on OSX, so it was good to find out about <a href="https://github.com/brndnmtthws/conky/releases/tag/v1.10.1">conky</a>.  I find conky much more obvious to set up and use than geektool, thanks in no small part to the various tutorials dotted around various Linux forums. Without further ado, here's my conkyrc.  It's messy in that it includes a couple of scripts within the file itself rather than the cleaner approach of saving the scripts separately and referencing them from the conkyrc file.

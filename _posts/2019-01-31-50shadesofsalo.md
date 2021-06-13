@@ -18,4 +18,5 @@ Rather than acting like a designer’s palette where colours are arranged by col
 
 Below you can find links to the palettes, and a couple of graphics generated using the colours.
 
-[<img src="/images/salo_blog.png" width="100">]({{site.url}}/uploads/50SOS.tar.gz)
+[<img src="/images/salo_blog.png"
+width="100">](https://drive.google.com/file/d/14OXmUTuV1DdweEZZJ0L4iElkpwJqkf2w/view?usp=sharing)

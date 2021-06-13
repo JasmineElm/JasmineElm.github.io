@@ -1,23 +1,26 @@
 ---
 layout: post
-title:  Keeping a Journal in Vim
-date:    2020-05-29 
+title: Keeping a Journal in Vim
+date: 2020-05-29T00:00:00.000Z
 categories: code
-synopsis: Making a journal in vim is surprisingly easy.  This post includes some simple scripts to demonstrate the process I currently use.
+synopsis: >-
+  Making a journal in vim is surprisingly easy.  This post includes some simple
+  scripts to demonstrate the process I currently use.
+last-modified-date: '2021-06-12T16:39:56+01:00'
+
 ---
 
 For me, keeping  a simple journal, provides a easy way of reflecting on the day. Done right, keeping a diary has been linked to [creativity](https://www.brainpickings.org/2014/09/04/famous-writers-on-keeping-a-diary/), and [reflective learning](https://www.kent.ac.uk/learning/PDP-and-employability/pdp/reflective.html).  Moreover, recording [one good thing per day](https://www.actionforhappiness.org/take-action/find-three-good-things-each-day)  has both mental health, and [positive habit forming](https://charlesduhigg.com/the-power-of-habit/) benefits.
 
 Core to my ability to maintain the habit of keeping a journal is making it _as easy as possible_ to add / maintain entries.  My journal is a brief affair that balances the main benefits of capturing and reflecting on the day's events with the effort required to do so.
-  
+
 ## Why Vim?
 
- Given this focus on simplicity, why would I consider Vim?  Surely I'd be stuck in a single entry forever whilst I try to [exit](https://github.com/hakluke/how-to-exit-vim)?
+Given this focus on simplicity, why would I consider Vim?  Surely I'd be stuck in a single entry forever whilst I try to [exit](https://github.com/hakluke/how-to-exit-vim)?
 
 In fact Vim is perfect for the task of journaling; it is readily, _freely_ available on my phone via [termux](https://wiki.termux.com/wiki/Text_Editors#Vim), my laptop, or at a push via ssh. Whilst the same may be said about other editors, Vim's super power as far as journaling is that it can apply templates contextually.  Tying these templates together with Vim's ability to process shell commands, makes it is possible to create a personalised entry with effectively zero effort.  Using a editor in a terminal means I don't have the visual cruft of a bespoke app with the associated [cognitive load](https://www.nngroup.com/articles/zen-mode/) and [interaction cost](https://www.nngroup.com/videos/interaction-cost/).  Finally, _rolling my own_ journal process, allwos me to fully own my data.  I'm not tied to a proprietary platform, and don't have to worry about about how the data is used.
 
 ## Ingredients
-
 
 The solution I have come to is based on three apps:
 
@@ -84,7 +87,6 @@ Now all we need is a script that will:
 2. open it in vim
 3. save it to our cloud storage
 
-
 ```bash
 #!/bin/sh
 
@@ -103,7 +105,7 @@ rclone copy ~/documents/journal owncloud:journal
 
 ## Looking ahead
 
-as I've been using this, I've found myself repeating simple prases.  To reduce this repetition, I've added the following abbreviations to my `.vimrc` 
+as I've been using this, I've found myself repeating simple prases.  To reduce this repetition, I've added the following abbreviations to my `.vimrc`
 
 ```vim
 abbr _ok OK day, 
@@ -115,9 +117,8 @@ The journal process I have at the moment is a near perfect for my needs, it is l
 
 Whilst it's ideal at the moment, there are a few things that could further enhance the process, namely:
 
-+ using a yaml block to capture richer data 
-+ encryption of journal entries
-+ data analysis / sentiment analysis of journal entries
+- using a yaml block to capture richer data
+- encryption of journal entries
+- data analysis / sentiment analysis of journal entries
 
 For the time being though, it's good enough to be bulding the habit and reflecting on each day.
-

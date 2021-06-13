@@ -1,14 +1,16 @@
 ---
 layout: post
-title:  ImageMagick - simple random colour canvas script
-date:    2015-08-26
+title: ImageMagick - simple random colour canvas script
+date: 2015-08-26T00:00:00.000Z
 categories: code
-synopsis: "bash script to generate a random 500px square canvas in ImageMagick"
+synopsis: bash script to generate a random 500px square canvas in ImageMagick
+last-modified-date: '2021-06-12T16:39:12+01:00'
+
 ---
 
 Creates a 10x10 px canvas of noise, chooses a random pixel from it, creates a 500x500 px canvas of that colour.  The use of random on an essentially random image (noise). is probably overkill, though I suspect neither algorithm is truly "random" so the additional code won't hurt
 
-```bash  
+```bash
 #!/bin/sh
 px=`jot -r 1 1 10`
 py=`jot -r 1 1 10`

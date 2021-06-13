@@ -1,9 +1,14 @@
 ---
 layout: post
-title: The Future of High Street Retail 
-date:    2020-05-24
+title: The Future of High Street Retail
+date: 2020-05-24T00:00:00.000Z
 categories: writing
-synopsis: "High Street Retail has been in steady decline for decades.  To stem this tide, retailers should embrace omnichannel retail, which will allow them to compete in a market increasingly dominated by online giants and supermarkets"
+synopsis: >-
+  High Street Retail has been in steady decline for decades.  To stem this tide,
+  retailers should embrace omnichannel retail, which will allow them to compete
+  in a market increasingly dominated by online giants and supermarkets
+last-modified-date: '2021-06-12T16:39:54+01:00'
+
 ---
 
 Last year, before there was a hint of Coronavirus, I wrote an essay about how the high street can compete with Amazon, Tesco and other retail giants.

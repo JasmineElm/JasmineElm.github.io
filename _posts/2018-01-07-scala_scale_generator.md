@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  Scala scale generator
-date:    2018-01-07 13:50:27
+title: Scala scale generator
+date: 2018-01-07T13:50:27.000Z
 categories: code
 synopsis: javascript Scala scale generator
+last-modified-date: '2021-06-12T16:39:32+01:00'
+
 ---
 
 <script>
@@ -134,31 +136,40 @@ synopsis: javascript Scala scale generator
 
    }
    </script>
-  Scala is "[a powerful software tool for experimentation with Musical tunings](http://huygens-fokker.org/scala/)". The tool itself allows users to apply different tuning conventions to electronic instruments. With Scala, users can create, modify, and use complex musical scales.
 
-  Scala itself relies on plain text files with an extension of "scl". The rules around the formatting of contents of the file itself are relatively permissive, namely:
+Scala is "[a powerful software tool for experimentation with Musical tunings](http://huygens-fokker.org/scala/)". The tool itself allows users to apply different tuning conventions to electronic instruments. With Scala, users can create, modify, and use complex musical scales.
 
-+ a file may only contain one scale.
-+ line comments are represented by lines beginning with "!", they are ignored by Scala/compatible software
-+ the first line that is not a comment should contain a description of the fieldset
-+ The next non-comment line will contain the number of notes
-+ Each subsequent line will contain note values
-  + the note may be a cent value (e.g. 100.993), or
-  + the note may be a ratio (e.g. 1/4)
-  + scales may contain a combination of ratios and cent values
-  + logically, scales can contain two, or more notes
+Scala itself relies on plain text files with an extension of "scl". The rules around the formatting of contents of the file itself are relatively permissive, namely:
 
-+ any note value without a period will be considered a ratio for instance, 2 would be considered 2&frasl;1
-+ ratios contain one slash only
-+ numerators/denominators may be any positive number up to 2<sup>31</sup>-1
-+ The first note of 1&frasl;1 or 0.0 cents is implicit and not in the files.
-+ ratios and cent values are calculated from the root note
+- a file may only contain one scale.
+
+- line comments are represented by lines beginning with "!", they are ignored by Scala/compatible software
+
+- the first line that is not a comment should contain a description of the fieldset
+
+- The next non-comment line will contain the number of notes
+
+- Each subsequent line will contain note values
+  - the note may be a cent value (e.g. 100.993), or
+  - the note may be a ratio (e.g. 1/4)
+  - scales may contain a combination of ratios and cent values
+  - logically, scales can contain two, or more notes
+
+- any note value without a period will be considered a ratio for instance, 2 would be considered 2⁄1
+
+- ratios contain one slash only
+
+- numerators/denominators may be any positive number up to 2<sup>31</sup>-1
+
+- The first note of 1⁄1 or 0.0 cents is implicit and not in the files.
+
+- ratios and cent values are calculated from the root note
 
 Additionally, to make the output scales usable, I have applied some additional rules:
 
-+ the scale will cover a single octave
-+ the scale will contain at least two notes
-+ the notes in a scale will be ordered low to high
+- the scale will cover a single octave
+- the scale will contain at least two notes
+- the notes in a scale will be ordered low to high
 
 The below button will generate text in scala ".scl" format. To define a name and/or the number of notes in a scale use the text-boxes. If the boxes are not used, or if they contain invalid values (e.g. if the number of notes box contains letters, or is unusually low/high), random values will be used.
 

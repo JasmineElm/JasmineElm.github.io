@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  sudo on AWS
-date:    2021-02-17 12:46:58 
+title: sudo on AWS
+date: 2021-02-17T12:46:58.000Z
 categories: code
-theme: jekyll-theme-dinky
 synopsis: Getting sudo to work on AWS isn't as obvious as it might be{{site.url}}.
+last-modified-date: '2021-06-12T16:40:09+01:00'
+
 ---
 
 While following the [Linux Upskill challenge](https://github.com/snori74/linuxupskillchallenge/), I came across some unexpected behaviour:  issuing `sudo <command>` didn't prompt me for a password.
@@ -76,7 +77,7 @@ ls -l /etc/sudoers.d/90-cloud-init-users
 
 ![what permissions does the file have?]({{site.url}}/images/aws_passwd_04.jpg)
 
-It's owned by root, but root cannot write to it.  Let's temporarily make te file writeable:
+It's owned by root, but root cannot write to it.  Let's temporarily make the file writeable:
 
 ```bash
 chmod 640 /etc/sudoers.d/90-cloud-init-users

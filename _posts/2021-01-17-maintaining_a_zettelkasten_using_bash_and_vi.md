@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  Maintaining a Zettelkasten using Bash and Vi
-date:    2021-01-17 18:31:40 
+title: Maintaining a Zettelkasten using Bash and Vi
+date: 2021-01-17T18:31:40.000Z
 categories: writing
 synopsis: change me
+last-modified-date: '2021-06-12T16:40:01+01:00'
+
 ---
 
 I've mentioned [earlier]() that I was trying to use 'basic' tools like `Vi` and `Bash` preference to gui heavy tools.  Describing Vi and Bash as simple tools does them a disservice.  Bash is powerful enough to be used as a full programming language,even before you factor in the range of external programs (`sed`, `perl`, `awk`, _ad infinitum_) that it can call on. Vi has an established `vimscript` language and a long enough lifespan to ensure anything you are trying to do has been attempted, and likely documented before.  Can these two tools be enough to manage a Zettelkasten though?
@@ -15,7 +17,7 @@ In simple terms, knowledge is added to cards.  Each card is contains a contained
 
 ## What does an electronic zettelkasten look like?
 
-If we're looking at making a wiki; that is absolutely possible, perhaps even in Vi alone.  Using markdown files, it is possible to king files together simply with minimal effort.  Managing and searching files however might need more heavy lifting.    The [blog here](https://www.edwinwenink.xyz/posts/48-vim_fast_creating_and_linking_notes/) was an excellent resource; the author covers all the functionality I wanted, specifically, naming of cards, and finding them.  
+If we're looking at making a wiki; that is absolutely possible, perhaps even in Vi alone.  Using markdown files, it is possible to king files together simply with minimal effort.  Managing and searching files however might need more heavy lifting.    The [blog here](https://www.edwinwenink.xyz/posts/48-vim_fast_creating_and_linking_notes/) was an excellent resource; the author covers all the functionality I wanted, specifically, naming of cards, and finding them.
 
 In large part, I've simply copied the code wholesale.  The fuzzy-find/insert function is perfect for my needs:
 
