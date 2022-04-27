@@ -8,23 +8,7 @@
 ###  DESCRIPTION    ###########################################################
 # Helper functions to get Github pages up and running
 
-###  VARIABLES      ###########################################################
-
-_FULL_PATH="$(realpath "${0}")"
-_PATH=${_FULL_PATH%/*}
-_FULL_FN=${_FULL_PATH##*/}
-_EXT=${_FULL_FN##*.}
-_FN=${_FULL_FN%.*}
-_logfile=$_PATH/$_FN.log
-
-DTE="$(date +%Y-%m-%d)";
-TME="$(date +%T)";
 ###  FUNCTIONS      ###########################################################
-
-_write_log() {
-  # run a command $@, write it to a log matching the name of thsi script.
-  $@ >> $_logfile
-}
 
 _jekyll_serve() {
   xdg-open http://127.0.0.1:4000/ &
@@ -35,13 +19,26 @@ _jekyll_config() {
   # install prerequisites
   sudo apt install ruby tmux
   gem install bundler
-  # if following fails/grumbles, remove Gemfile.lock
+  rm Gemfile.lock
   bundle install
 }
 
+_serve_and_create() {
+    post_title=$*;
+    tmux new-session -d;
+    tmux split-window -v;
+    tmux resize-pane -D 10;
+    tmux send -t 0:0.1 "_jekyll_serve" Enter;
+    tmux send -t 0:0.0 "_create_post  $(echo $post_title)" Enter;
+    tmux select-pane -U;
+    tmux -2 attach-session -d
+}
+
 _create_post ()
-{ 
-    local title="$1";
+{
+    DTE="$(date +%Y-%m-%d)";
+    TME="$(date +%T)";
+    local title="$*";
     safe_title=$(echo "$title" | sed 's/ /_/g' | tr '[:upper:]' '[:lower:]');
     printf "%s---
 layout:     post
@@ -49,8 +46,11 @@ title:      $title
 date:       $DTE $TME
 categories: writing
 synopsis:   change me
----" > "_posts/$DTE-$safe_title.md"
-    vi "_posts/$DTE-$safe_title.md"
+---
+
+
+" > "_posts/$DTE-$safe_title.md"
+    vi "+normal G$" +startinsert! "_posts/$DTE-$safe_title.md"
 }
 
 
@@ -61,7 +61,6 @@ Helper functions to build, serve, edit github pages
 
 Usage:
   ${_FULL_FN} [<arguments>]
-  ${_FULL_FN} -h | --help
 
 Options:
   -h    Show this screen.
@@ -86,9 +85,12 @@ _main() {
             ;;
             p)
               shift
+              export -f _jekyll_serve
+              export -f _create_post
               _TITLE="$*"
-              #_jekyll_serve &
-              _create_post "$_TITLE"
+              _serve_and_create "$_TITLE"
+              unset -f _jekyll_serve
+              unset -f _create_post
             ;;
             s)
               _jekyll_serve
