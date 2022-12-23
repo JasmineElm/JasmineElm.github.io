@@ -235,6 +235,10 @@ GEM
       jekyll-seo-tag (~> 2.1)
     minitest (5.15.0)
     multipart-post (2.1.1)
+    nokogiri (1.13.4-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.13.4-x86_64-darwin)
+      racc (~> 1.4)
     nokogiri (1.13.4-x86_64-linux)
       racc (~> 1.4)
     octokit (4.22.0)
@@ -277,6 +281,7 @@ GEM
     zeitwerk (2.5.4)
 
 PLATFORMS
+  universal-darwin-22
   x86_64-linux
 
 DEPENDENCIES
@@ -284,4 +289,4 @@ DEPENDENCIES
   just-the-docs
 
 BUNDLED WITH
-   2.3.12
+   2.3.18
