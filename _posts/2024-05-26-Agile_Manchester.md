@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  Agile Manchester
-date:    2024-05-26 17:00
-categories: Writing, development
+title: Agile Manchester 2024
+date: 2024-05-25T17:46:58.000Z
+categories: writing
 synopsis: Reflections on The 2024 Agile Manchester Conference
 ---
 
 I've been working in Agile development for a few years, but have never really
-"got it". The models, frameworks, methodologies always felt unapplicable, or
-worse, an exercise in kabuki theare that required extra admin. This is the first
+"got it". The models, frameworks, methodologies always felt un-applicable, or
+worse, an exercise in kabuki theatre that required extra admin. This is the first
 Agile conference that I've attended, and it massively helped to reframe my
 understanding of Agile, and how we can use it.
 
@@ -139,7 +139,7 @@ personal responsibility to avoid burning out. Holly's advice was to be aware of
 this trap , and actively looking after yourself. Try to find sources of energy,
 exercise, hobbies, socialising, and so on. This is a marathon, not a sprint.
 
-### How we improved our ability to herd cats and deliver at scale
+## How we improved our ability to herd cats and deliver at scale
 
 _Speakers_: [Samuel Cann](https://www.linkedin.com/in/sam-cann-558018a5/) & [Liam Dewes](https://www.linkedin.com/in/liamdewes/)
 
@@ -236,7 +236,9 @@ became layered with meaning; the framing of colleagues' creations gave us a way
 of clarifying our own thoughts, and becoming vulnerable in a way that felt safe.
 I saw the physicality of the exercise as offerin
 
-## What's the future? - Charles Weir
+## What's the future?
+
+_Speaker_: [Charles Weir](https://www.lancaster.ac.uk/scc/about-us/people/charles-weir)
 
 Not Agile, but thought provoking. Charles described his
 [research](https://ieeexplore.ieee.org/document/10380243) to identify trends
@@ -255,16 +257,17 @@ are not able to catch the wave of this change, and are left behind. The
 opportunity is that we are able to shape the future, and ensure that it is a
 positive one.
 
-## Dysfunction Mapping: A tool for empirical agile change - Michael Lloyd
+## Dysfunction Mapping: A tool for empirical agile change
 
-see
-[Dysfunction Mapping](https://medium.com/@michael_78275/dysfunction-mapping-a-tool-for-effective-agile-coaching-dc4634171b5f)
+_Speaker_: [Michael Lloyd](https://www.linkedin.com/in/michael-lloyd-124621177/)
+
+
 
 You reach the end of a scrum, and something is _wrong_. Maybe the scrum missed
 its goals, testing wasn't complete, or the team is dissatisfied. The temptation
 is to fix the problem, but the problem is often a symptom of a deeper issue.
 Michael's talk was a great reminder of the importance of understanding the root
-cause of a problem. He introduced the concept of Dysfunction Mapping; a tool to
+cause of a problem. He introduced the concept of [Dysfunction Mapping](https://medium.com/@michael_78275/dysfunction-mapping-a-tool-for-effective-agile-coaching-dc4634171b5f); a tool to
 identify and address the root causes of problems in a scrum. The tool is simple;
 you start with a symptom, and work back through the dysfunction, purpose,
 solution, and measure. The key to this is to identify the root cause of the
@@ -273,18 +276,15 @@ we fix it. The problem is that the problem is often a symptom of a deeper issue.
 Michael's talk was a great reminder of the importance of understanding the root
 cause of a problem.
 
-```mermaid
-graph RL
-%% back-to-front for a reason... Read the notes!
-Symptom -->Dysfunction-->Purpose-->Solution-->Measure
-```
 
 Dysfunction mapping is something I want to try in my work. I find myself
 surrounded by symptoms, but defining how to address them is often difficult.
 Dysfunction mapping looks like a great way to improve systemic issues rather
 than treating the symptoms.
 
-## Guiding stakeholders along in your agile product development journey - Karim Qurie
+## Guiding stakeholders along in your agile product development journey
+
+_Speaker_: [Karim Qurie](https://www.linkedin.com/in/karimqurie/)
 
 There's a tension between governance and delivering features that _users_ want.
 I've seen both sides of this; products that are so user driven that they

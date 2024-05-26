@@ -3,7 +3,7 @@ layout: post
 title: Maintaining a Zettelkasten using Bash and Vi
 date: 2021-01-17T18:31:40.000Z
 categories: writing
-synopsis: change me
+synopsis: Using the commandline to manage your knowledge
 last-modified-date: "2021-06-12T16:40:01+01:00"
 ---
 
