@@ -61,7 +61,8 @@ footer_content: >-
       <a href="https://www.goodreads.com/user/show/92143072-james-lemin" style=" margin: 1.25em"; ><img class="miniicon" src="/images/goodreads.svg" alt "Goodreads" /></a>
       <a href="https://www.last.fm/user/Bronson59" style=" margin: 1.25em"; ><img class="miniicon" src="/images/lastfm.svg" alt "last.fm" /></a>  
       <a href="https://letterboxd.com/jasmineelm/" style=" margin: 1.25em"; ><img class="miniicon" src="/images/letterboxd.svg" alt "Letterboxd" /</a>
-       <a href="/feed.xml" style=" margin: 1.25em"; ><img class="miniicon" src="/images/rss.svg" alt "rss feed" /></a> 
+      <a href="/feed.xml" style=" margin: 1.25em"; ><img class="miniicon" src="/images/rss.svg" alt "rss feed" /></a> 
+      <a rel="me" href="https://home.social/@JamesLemin"></a>
     </div>  
 url: "https://james-lemin.com" # the base hostname & protocol for your site
 

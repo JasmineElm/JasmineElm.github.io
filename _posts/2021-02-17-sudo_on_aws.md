@@ -3,7 +3,7 @@ layout: post
 title: sudo on AWS
 date: 2021-02-17T12:46:58.000Z
 categories: code
-synopsis: Getting sudo to work on AWS isn't as obvious as it might be{{site.url}}.
+synopsis: Getting sudo to work on AWS isn't as obvious as it might be.
 last-modified-date: '2021-06-12T16:40:09+01:00'
 
 ---
