@@ -7,15 +7,14 @@ last-modified-date: '2021-06-12T16:39:32+01:00'
 
 ---
 
-<script>
+<script eleventy:ignore>
 /*
   Generate Scala
 */
     /*Random string, number and bool functions*/
     function randomString(length) {
       var returnString = "";
-      /*below variable roughly has letter frequencies matching English language
-          should mean that output text is less exotic looking
+      /*below variable roughly has letter frequencies matching English languages - output text is less exotic looking
       */
       var possible = "aaaaaaaaaaaaaaaabbbcccccddddddddeeeeeeeeeeeeeeeeeeeeeeeeefffffgggghhhhhhhhhhhhiiiiiiiiiiiiiijkllllllllmmmmmnnnnnnnnnnnnoooooooooooooooopppqrrrrrrrrrrrrssssssssssstttttttttttttttttttttttuuuuuuvwwwwwxyyyyz";
       for (var i = 0; i < length; i++)
@@ -175,9 +174,14 @@ The below button will generate text in scala ".scl" format. To define a name and
 I've also used this code in a twitter bot that will irregularly tweet a scale:
 ~~[@microscalebot](https://twitter.com/microscalebot).~~
 
+<style>
+.hidden { display: none !important; }
+.blockError { color: red; font-weight: bold; }
+</style>
+
 <input type="text" name="name" id="textbox1" placeholder="Scale Name" />
-<label for="name" id="nameError" class="blockError"> Name not supplied!</label><br><br>
-<input type="text" name="textbox2" placeholder="number of notes" id="textbox2" /><label for="name" id="lengthError" class="blockError"> Number of notes not supplied, or non numeric</label><br><br>
+<label for="name" id="nameError" class="blockError hidden"> Name not supplied!</label><br><br>
+<input type="text" name="textbox2" placeholder="number of notes" id="textbox2" /><label for="name" id="lengthError" class="blockError hidden"> Number of notes not supplied, or non numeric</label><br><br>
     <input type="submit" name="button" id="button1" onclick="outScl()" value="generate Scale" /> <br>
 <textarea id="outScale" name="name" rows="25" cols="80"></textarea><br>
 <a href="" id="outScaleLink" download="">download the above scale</a> <br>

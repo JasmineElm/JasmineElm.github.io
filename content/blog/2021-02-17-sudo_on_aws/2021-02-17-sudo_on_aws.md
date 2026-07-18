@@ -19,11 +19,11 @@ exit
 
 Passwords duly set, the password wasn't prompted:
 
-![huh? Why am I not being asked for a password?]({{site.url}}/images/aws_passwd_01.jpg)
+![huh? Why am I not being asked for a password?]({{site.url}}aws_passwd_01.jpg)
 
 Let's check I'm in the `sudo` group:
 
-![groups looks OK]({{site.url}}/images/aws_passwd_02.jpg)
+![groups looks OK]({{site.url}}aws_passwd_02.jpg)
 
 So there must be some config that means I'm not prompted for a password.  Let's look at the `etc/sudoers` file:
 
@@ -64,7 +64,7 @@ su - root
 vi /etc/sudoers.d/90-cloud-init-users
 ```
 
-![wait, it's not writeable?]({{site.url}}/images/aws_passwd_03.jpg)
+![wait, it's not writeable?]({{site.url}}aws_passwd_03.jpg)
 
 Oh! The file isn't writeable.  I could use `visudo` to edit it, but that is defaulting to use `nano`. Ugh, no thanks.
 
@@ -74,7 +74,7 @@ Instead, let's check, and fix the file permissions
 ls -l /etc/sudoers.d/90-cloud-init-users
 ```
 
-![what permissions does the file have?]({{site.url}}/images/aws_passwd_04.jpg)
+![what permissions does the file have?]({{site.url}}aws_passwd_04.jpg)
 
 It's owned by root, but root cannot write to it.  Let's temporarily make the file writeable:
 
@@ -84,7 +84,7 @@ chmod 640 /etc/sudoers.d/90-cloud-init-users
 
 Now we can edit it, and return the permissions
 
-![editing once the permissions are changed]({{site.url}}/images/aws_passwd_05.jpg)
+![editing once the permissions are changed]({{site.url}}aws_passwd_05.jpg)
 
 ```bash
 vi /etc/sudoers.d/90-cloud-init-users
@@ -98,4 +98,4 @@ and test that we are being prompted for the password correctly:
 sudo apt update
 ```
 
-![hooray! we're asked for a password]({{site.url}}/images/aws_passwd_06.jpg)
+![hooray! we're asked for a password]({{site.url}}aws_passwd_06.jpg)
