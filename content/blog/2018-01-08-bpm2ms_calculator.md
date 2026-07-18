@@ -7,7 +7,7 @@ last-modified-date: '2021-06-12T16:39:45+01:00'
 
 ---
 
-<script>
+<script eleventy:ignore>
 /*
   BPM to MS
 */

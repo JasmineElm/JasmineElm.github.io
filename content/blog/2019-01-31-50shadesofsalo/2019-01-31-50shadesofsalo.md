@@ -7,7 +7,7 @@ synopsis: generating a palette from a movie.
 
 _Salo is a horribly beautiful film._
 
-![Salo Poster]({{site.url}}/images/Salo_Poster.png)
+![Salo Poster](Salo_Poster.png)
 
 It depicts some of the most violently unpleasant things you can imagine in a sumptuous way.  The cinematography is gorgeous, the colours opulently saturated, the sets luxurious.  The experience of watching the film however leaves you feeling sullied, grimey, complicit.  Without realising it, you become sucked into the amoral, brutal world of the ruling elite, as they rape, torture and kill their way through their slaves.  What if the essence of the beauty in the film were extracted, distilled, and divorced from the context of the story?.  
 
@@ -17,5 +17,6 @@ Rather than acting like a designer’s palette where colours are arranged by col
 
 Below you can find links to the palettes, and a couple of graphics generated using the colours.
 
-[<img src="/images/salo_blog.png"
-width="100">](https://drive.google.com/file/d/14OXmUTuV1DdweEZZJ0L4iElkpwJqkf2w/view?usp=sharing)
+[<img src="salo_blog.png" width="100" alt="Book here">](/50SoSPrint.pdf)
+
+[Palettes](/Palettes.zip)

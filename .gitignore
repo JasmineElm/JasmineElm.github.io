@@ -1,8 +1,6 @@
 _site
-.*cache
-.bundle
-.vscode
-vendor
-.jekyll-metadata
-_posts/.obsidian/
+node_modules
 .DS_Store
+.vscode
+**/.obsidian/
+

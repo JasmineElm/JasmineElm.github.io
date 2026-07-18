@@ -36,7 +36,7 @@ The majority of my vim use is in writing markdown. Using `spell` is key for pick
 
 By default, vim shows a minimally decorated `ruler` that contains the bare minimum of information.  You can add a more informative `statusline` that shows, I believe more _useful_ information, but this is at the expense of screen real estate.  On my laptop, the combined status and ruler take up the better part of 10% of the entire space.  Instead, I take a minimal subset of information, and place that in my statusbar:
 
-![an image of my ruler]({{site.url}}/images/ruler.png)
+![an image of my ruler](ruler.png)
 
 The ruler contains word count(`650` in this example), whether the files is modified (`[+]`), and the `line number`:`column`.  This is perfect for my needs, anything more would be a waste.
 

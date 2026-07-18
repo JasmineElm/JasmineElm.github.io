@@ -79,16 +79,16 @@ _create_post ()
     local title="$*";
     safe_title=$(echo "$title" | sed 's/ /_/g' | tr '[:upper:]' '[:lower:]');
     printf "%s---
-layout:     post
 title:      $title
 date:       $DTE $TME
-categories: writing
+tags:
+  - writing
 synopsis:   change me
 ---
 
 
-" > "_posts/$DTE-$safe_title.md"
-    vi "+normal G$" +startinsert! "_posts/$DTE-$safe_title.md"
+" > "content/blog/$DTE-$safe_title.md"
+    vi "+normal G$" +startinsert! "content/blog/$DTE-$safe_title.md"
 }
 
 
